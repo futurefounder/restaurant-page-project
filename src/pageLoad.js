@@ -1,5 +1,9 @@
 (function pageLoad() {
-  alert('Test');
+  function addCode() {
+    document.getElementById("content").innerHTML += 
+      "<h1>Test Add Content</h1>";
+  }; 
+  addCode();
 })();
 
 /* 
