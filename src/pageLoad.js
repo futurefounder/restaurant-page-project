@@ -2,6 +2,26 @@
   function addCode() {
     document.getElementById("content").innerHTML += 
       "<h1>Test Add Content</h1>";
+
+    // const headerElement = document.getElementById("gfg");
+
+// Create element
+const el = document.createElement('header');
+
+// Add Tailwind class to element
+el.classList.add('text-gray-600', 'body-font');
+
+// Add text content to element
+el.textContent = 'Test-Tailwind Class';
+
+// Or set the innerHTML of the element
+// el.innerHTML = `<span>One, two, three</span>`;
+
+// add element to DOM
+const box = document.getElementById('content');
+box.appendChild(el);
+
+
   }; 
   addCode();
 })();
